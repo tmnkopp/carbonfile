@@ -1,0 +1,9 @@
+C:\inetpub\wwwroot\CarbonFileDashboard\Core\bin\Debug\CarbonDash.Core.dll
+C:\inetpub\wwwroot\CarbonFileDashboard\Core\bin\Debug\CarbonDash.Core.pdb
+C:\inetpub\wwwroot\CarbonFileDashboard\Core\bin\Debug\ASPXCore.dll
+C:\inetpub\wwwroot\CarbonFileDashboard\Core\bin\Debug\SqlHelper.dll
+C:\inetpub\wwwroot\CarbonFileDashboard\Core\bin\Debug\SqlHelper.pdb
+C:\inetpub\wwwroot\CarbonFileDashboard\Core\obj\Debug\ResolveAssemblyReference.cache
+C:\inetpub\wwwroot\CarbonFileDashboard\Core\obj\Debug\CarbonDash.Core.dll
+C:\inetpub\wwwroot\CarbonFileDashboard\Core\obj\Debug\CarbonDash.Core.pdb
+C:\inetpub\wwwroot\CarbonFileDashboard\Core\bin\Debug\ASPXCore.pdb

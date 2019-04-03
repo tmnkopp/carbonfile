@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FFEFC270-C039-4926-BDF7-A81714E74D1F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CarbonDash.Core</RootNamespace>
+    <AssemblyName>CarbonDash.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ASPXCore">
+      <HintPath>..\..\..\COM\ASPXUtils.2.0\ASPXUtils\obj\Debug\ASPXCore.dll</HintPath>
+    </Reference>
+    <Reference Include="SqlHelper">
+      <HintPath>..\..\..\COM\SqlHelper20\SqlHelper\obj\Debug\SqlHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BasePages\BaseAdminMaster.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BasePages\BaseMasterPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BasePages\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessLogic\Account.cs" />
+    <Compile Include="BusinessLogic\AccountType.cs" />
+    <Compile Include="BusinessLogic\Company.cs" />
+    <Compile Include="BusinessLogic\Device.cs" />
+    <Compile Include="BusinessLogic\Role.cs" />
+    <Compile Include="CDashException.cs" />
+    <Compile Include="Controls\DDAccount.cs" />
+    <Compile Include="Controls\DDAccountType.cs" />
+    <Compile Include="Controls\DDRoles.cs" />
+    <Compile Include="Helpers\CommonHelper.cs" />
+    <Compile Include="Controls\BaseUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\DateSelect.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\DDYears.cs" />
+    <Compile Include="Controls\ImageSelect.cs" />
+    <Compile Include="Controls\SiteSettingsForm.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Helpers\DateUtils.cs" />
+    <Compile Include="Helpers\Globals.cs" />
+    <Compile Include="Helpers\MailHelper.cs" />
+    <Compile Include="Helpers\Utils.cs" />
+    <Compile Include="Providers\MembershipProvider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Providers\RoleProvider.cs" />
+    <Compile Include="Security.cs" />
+    <Compile Include="SiteSettings.cs" />
+    <Compile Include="SiteSettingsDAL.cs" />
+    <Compile Include="BusinessLogic\User.cs" />
+    <Compile Include="BusinessLogic\UserService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\CarbonDash.Core.dll" />
+    <Content Include="bin\Debug\CarbonDash.Core.pdb" />
+    <Content Include="obj\Debug\CarbonDash.Core.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\CarbonDash.Core.dll" />
+    <Content Include="obj\Debug\CarbonDash.Core.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
